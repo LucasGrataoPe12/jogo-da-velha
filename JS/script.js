@@ -293,4 +293,5 @@ function verificaGanhador() {
         lblJogador.innerText = 'Deu velha';
         lblJogadas.innerText = '';
     }
+    lblJogadas.innerText = '(' + (jogadas+1) + 'ª Jogada)';
 }
