@@ -25,7 +25,7 @@ let gyrados = "url('img/Gyrados.png')";
 let tyranitar = "url('img/Tyranitar.png')";
 let vaporeon = "url('img/vaporeon.png')";
 let Greninja = "url('img/Greninja-Ash.png')";
-let lucario= "url('img/lucario.png')";
+let lucario = "url('img/lucario.png')";
 let scyzor = "url('img/scyzor.png')";
 
 
@@ -429,7 +429,7 @@ function clickReiniciar() {
 }
 
 function clickPoke(pokemonSelecionado) {
-    
+
     let jogadorSelecionado = null;
 
     if (pokemonSelecionado == 'chansey') {
@@ -445,34 +445,28 @@ function clickPoke(pokemonSelecionado) {
     } else if (pokemonSelecionado == 'vaporeon') {
         jogadorSelecionado = vaporeon;
     } else if (pokemonSelecionado == 'Greninja') {
-        jogadorSelecionado = vaporeon;
-      }  else if (pokemonSelecionado == 'lucario') {
-            jogadorSelecionado = vaporeon;
-        }  else if (pokemonSelecionado == 'scyzor') {
-                jogadorSelecionado = vaporeon;
-            }
-        }
-
-    
-
-    
-
-    if (jogadorSelecionado == null) {
-        alert('Erro ao selecionar o personagem');
-        return;
+        jogadorSelecionado = Greninja;
+    } else if (pokemonSelecionado == 'lucario') {
+        jogadorSelecionado = lucario;
+    } else if (pokemonSelecionado == 'scyzor') {
+        jogadorSelecionado = scyzor;
     }
+if (jogadorSelecionado == null) {
+    alert('Erro ao selecionar o personagem');
+    return;
+}
 
-    let lblOrdemPersonagem = document.getElementById('ordemPersonagem');
-    if (jogador1 == null) {
-        jogador1 = jogadorSelecionado;
-        lblOrdemPersonagem.innerText = '2º'
-    } else {
-        jogador2 = jogadorSelecionado;
-        sectionPersonagens.style.display = 'none'
-        sectionTabuleiro.style.display = 'block';
-    } if(jogador1 == jogador2 ){
-        alert("Os jogadores são iguais, por favor selecione outro!")
-        location.reload()
-    }
-    
+let lblOrdemPersonagem = document.getElementById('ordemPersonagem');
+if (jogador1 == null) {
+    jogador1 = jogadorSelecionado;
+    lblOrdemPersonagem.innerText = '2º'
+} else {
+    jogador2 = jogadorSelecionado;
+    sectionPersonagens.style.display = 'none'
+    sectionTabuleiro.style.display = 'block';
+} if (jogador1 == jogador2) {
+    alert("Os jogadores são iguais, por favor selecione outro!")
+    location.reload()
+}
+
 }
