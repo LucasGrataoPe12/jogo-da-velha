@@ -22,7 +22,7 @@ let chansey = "url('img/chansey.png')";
 let dragonyte = "url('img/dragonyte.png')";
 let gengar = "url('img/gengar.png')";
 let gyrados = "url('img/Gyrados.png')";
-let tyranitar = "url('img/tyranitar.png')";
+let tyranitar = "url('img/Tyranitar.png')";
 let vaporeon = "url('img/vaporeon.png')";
 
 // Atribui imagens para escolha do personage
