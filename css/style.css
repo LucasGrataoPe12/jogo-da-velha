@@ -43,3 +43,14 @@ font-size: 30px;
     color: rgb(41, 68, 180);
     background-size: 120%;
 }
+#lucario {
+    position: fixed;
+    top: 100px;
+    left: 1px;
+}
+#dragonyte {
+    position: fixed;
+    top: 100px;
+    right: 1px;
+    width: 300px;
+}
