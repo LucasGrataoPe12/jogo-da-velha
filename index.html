@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jogo da Velha</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="JS/script.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,22 @@
         <section>
             <h1>Jogo da Velha</h1>
         </section>
-        <section class="tabuleiro">
+
+        <section id="containerPersonagens" class="containerPersonagens">
+            <h2>Selecione o <span id="ordemPersonagem">1º</span> personagem</h2>
+            <div>
+                <input type="button" value=" " id="poke1" onclick="clickPoke('chansey')">
+                <input type="button" value=" " id="poke2" onclick="clickPoke('dragonyte')">
+                <input type="button" value=" " id="poke3" onclick="clickPoke('gengar')">
+            </div>
+            <div>
+                <input type="button" value=" " id="poke4" onclick="clickPoke('gyrados')">
+                <input type="button" value=" " id="poke5" onclick="clickPoke('tyranitar')">
+                <input type="button" value=" " id="poke6" onclick="clickPoke('vaporeon')">
+            </div>
+        </section>
+
+        <section id="containerTabuleiro" class="tabuleiro">
             <div>
                 <input type="button" value=" " id="btn1" onclick="clickBtn1()">
                 <input type="button" value=" " id="btn2" onclick="clickBtn2()">
@@ -31,17 +47,20 @@
                 <input type="button" value=" " id="btn8" onclick="clickBtn8()">
                 <input type="button" value=" " id="btn9" onclick="clickBtn9()">
             </div>
-        </section>
-        <section>
-            <h2>
-                <span id="lblJogador">Jogador X</span>
-                <span id="lblJogadas">(1ª Jogada)</span>
-            </h2>
-            
-            <input type="button" value="Reiniciar" class="reinicio" id="btnReiniciar" onclick="clickReiniciar()">
 
+            <section>
+                <h2>
+                    <span id="lblJogador">Jogador 1</span>
+                    <span id="lblJogadas">(1ª Jogada)</span>
+                </h2>
+
+                <input type="button" value="Reiniciar" id="btnReiniciar" onclick="clickReiniciar()">
+            </section>
         </section>
     </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
