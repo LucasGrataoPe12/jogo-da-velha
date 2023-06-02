@@ -24,6 +24,10 @@ let gengar = "url('img/gengar.png')";
 let gyrados = "url('img/Gyrados.png')";
 let tyranitar = "url('img/Tyranitar.png')";
 let vaporeon = "url('img/vaporeon.png')";
+let Greninja = "url('img/Greninja-Ash.png')";
+let lucario= "url('img/lucario.png')";
+let scyzor = "url('img/scyzor.png')";
+
 
 
 
@@ -36,6 +40,11 @@ let poke3 = document.getElementById('poke3');
 let poke4 = document.getElementById('poke4');
 let poke5 = document.getElementById('poke5');
 let poke6 = document.getElementById('poke6');
+let poke7 = document.getElementById('poke7');
+let poke8 = document.getElementById('poke8');
+let poke9 = document.getElementById('poke9');
+
+
 
 poke1.style.backgroundImage = chansey;
 poke2.style.backgroundImage = dragonyte;
@@ -43,6 +52,9 @@ poke3.style.backgroundImage = gengar;
 poke4.style.backgroundImage = gyrados;
 poke5.style.backgroundImage = tyranitar;
 poke6.style.backgroundImage = vaporeon;
+poke7.style.backgroundImage = Greninja;
+poke8.style.backgroundImage = lucario;
+poke9.style.backgroundImage = scyzor;
 
 // Container
 let sectionPersonagens = document.getElementById('containerPersonagens');
@@ -432,7 +444,18 @@ function clickPoke(pokemonSelecionado) {
         jogadorSelecionado = tyranitar;
     } else if (pokemonSelecionado == 'vaporeon') {
         jogadorSelecionado = vaporeon;
-    }
+    } else if (pokemonSelecionado == 'Greninja') {
+        jogadorSelecionado = vaporeon;
+      }  else if (pokemonSelecionado == 'lucario') {
+            jogadorSelecionado = vaporeon;
+        }  else if (pokemonSelecionado == 'scyzor') {
+                jogadorSelecionado = vaporeon;
+            }
+        }
+
+    
+
+    
 
     if (jogadorSelecionado == null) {
         alert('Erro ao selecionar o personagem');
