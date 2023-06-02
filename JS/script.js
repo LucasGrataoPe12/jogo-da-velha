@@ -25,6 +25,10 @@ let gyrados = "url('img/Gyrados.png')";
 let tyranitar = "url('img/Tyranitar.png')";
 let vaporeon = "url('img/vaporeon.png')";
 
+
+
+
+
 // Atribui imagens para escolha do personage
 let poke1 = document.getElementById('poke1');
 let poke2 = document.getElementById('poke2');
