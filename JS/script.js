@@ -417,6 +417,7 @@ function clickReiniciar() {
 }
 
 function clickPoke(pokemonSelecionado) {
+    
     let jogadorSelecionado = null;
 
     if (pokemonSelecionado == 'chansey') {
@@ -446,5 +447,9 @@ function clickPoke(pokemonSelecionado) {
         jogador2 = jogadorSelecionado;
         sectionPersonagens.style.display = 'none'
         sectionTabuleiro.style.display = 'block';
+    } if(jogador1 == jogador2 ){
+        alert("Os jogadores são iguais, por favor selecione outro!")
+        location.reload()
     }
+    
 }
